@@ -3,7 +3,7 @@ Lower: .asciz "goodluck2025!!"
 Upper: .skip 100
 
 .section .text
-    call _start
+     
     movzbl Upper(%rip), %eax
     cmpb $'G', %al
     jne error

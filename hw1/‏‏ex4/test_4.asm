@@ -3,7 +3,7 @@ Lower: .asciz "a1b2C3"
 Upper: .skip 100
 
 .section .text
-    call _start
+     
     movzbl Upper(%rip), %eax
     cmpb $'A', %al
     jne error

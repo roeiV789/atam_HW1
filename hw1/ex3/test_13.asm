@@ -11,7 +11,7 @@ Node3: .quad 0
        .int 1
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmp $1, %al
     je success

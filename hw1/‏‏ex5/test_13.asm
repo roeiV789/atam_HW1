@@ -3,7 +3,7 @@ String: .asciz "the value is 0345 exactly"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $2, %al
     je success

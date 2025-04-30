@@ -3,7 +3,7 @@ String: .asciz "0b1101 is a nice binary number"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $2, %al
     je success

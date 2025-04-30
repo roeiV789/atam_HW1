@@ -3,7 +3,7 @@ Lower: .asciz "Only_Capital_Letters123"
 Upper: .skip 100
 
 .section .text
-    call _start
+     
     movzbl Upper(%rip), %eax
     cmpb $'O', %al
     jne error

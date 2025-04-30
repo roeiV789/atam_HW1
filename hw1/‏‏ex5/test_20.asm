@@ -3,7 +3,7 @@ String: .asciz "idiv at the start 0345 at the end"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $3, %al
     je success

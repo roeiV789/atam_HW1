@@ -11,7 +11,7 @@ Node3: .quad 0
        .int 8
 
 .section .text
-    call _start
+     
     movzbl (%rip), %eax
     cmp $2, %al        # סדרה מדרגה שנייה → Result=2
     je success

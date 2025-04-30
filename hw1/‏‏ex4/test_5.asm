@@ -3,7 +3,7 @@ Lower: .asciz "lowerCASE123!"
 Upper: .skip 100
 
 .section .text
-    call _start
+     
     movzbl Upper(%rip), %eax
     cmpb $'L', %al
     jne error

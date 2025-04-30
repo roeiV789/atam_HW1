@@ -3,7 +3,7 @@ String: .asciz "123 0x12aG wrong hex format"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $2, %al
     je success

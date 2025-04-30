@@ -3,7 +3,7 @@ Lower: .asciz "MiXeD CaSe1234"
 Upper: .skip 100
 
 .section .text
-    call _start
+     
     movzbl Upper(%rip), %eax
     cmpb $'M', %al
     jne error

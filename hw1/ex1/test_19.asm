@@ -4,9 +4,7 @@ Num2: .quad 0x0000000000000001
 BitCheck: .byte 0
 
 .section .text
-.globl _start
-_start:
-    call start_HW1
+
     movzbl BitCheck(%rip), %eax
     cmp $0, %al
     je success

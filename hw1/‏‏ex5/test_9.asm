@@ -3,7 +3,7 @@ String: .asciz "let's divide by div"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $1, %al
     je success

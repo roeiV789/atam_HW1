@@ -3,7 +3,7 @@ String: .asciz "div add idiv sub mul imul"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $1, %al
     je success

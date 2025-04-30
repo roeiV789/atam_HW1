@@ -3,7 +3,7 @@ String: .asciz "imul 0b1010 was used"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $3, %al
     je success

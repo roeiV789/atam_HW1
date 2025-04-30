@@ -7,7 +7,7 @@ Result: .byte 0
 DataSection:
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmp $1, %al
     je success

@@ -3,7 +3,7 @@ String: .asciz "0x2345 is just a hex"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $2, %al
     je success

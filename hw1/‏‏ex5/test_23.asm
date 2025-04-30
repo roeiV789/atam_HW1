@@ -3,7 +3,7 @@ String: .asciz "adding 0b111 after sub"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $3, %al
     je success

@@ -3,7 +3,7 @@ String: .asciz "nothing to see here!"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $0, %al
     je success

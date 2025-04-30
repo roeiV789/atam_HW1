@@ -4,7 +4,7 @@ First: .quad 0
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmp $1, %al
     je success

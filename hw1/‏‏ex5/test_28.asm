@@ -3,7 +3,7 @@ String: .asciz "idiv is here, but no numbers"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $1, %al
     je success

@@ -3,7 +3,7 @@ String: .asciz "plain text with 0456 inside"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $2, %al
     je success

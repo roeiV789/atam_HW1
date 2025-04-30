@@ -3,7 +3,7 @@ String: .asciz "random 0b0001 text"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $2, %al
     je success

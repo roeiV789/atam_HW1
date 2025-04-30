@@ -3,7 +3,7 @@ Lower: .asciz "!@#$%^&*()_+-=[]{}|;':,.<>/?"
 Upper: .skip 100
 
 .section .text
-    call _start
+     
     movzbl Upper(%rip), %eax
     cmpb $0, %al
     jne error

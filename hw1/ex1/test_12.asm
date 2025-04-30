@@ -4,7 +4,7 @@ Num2: .long 0x00000000          # 0 bits on (even)
 BitCheck: .byte 0
 
 .section .text
-    call _start
+    
     movzbl BitCheck(%rip), %eax
     cmpb $0, %al                 # odd vs even → should be 0
     je success

@@ -3,7 +3,7 @@ Lower: .asciz "Hello World 2024!"
 Upper: .skip 100
 
 .section .text
-    call _start
+     
     movzbl Upper(%rip), %eax
     cmpb $'H', %al
     jne error

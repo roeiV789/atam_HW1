@@ -9,7 +9,7 @@ Node2: .quad 0
        .int 10
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmp $1, %al        # סדרה רגילה: הפרש 5 → Result=1
     je success

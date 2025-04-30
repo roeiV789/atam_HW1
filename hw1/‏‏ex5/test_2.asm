@@ -3,7 +3,7 @@ String: .asciz "the number is 0x345 here"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $2, %al
     je success

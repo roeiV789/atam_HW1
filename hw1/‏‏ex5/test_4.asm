@@ -3,7 +3,7 @@ String: .asciz "no valid words here!"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $0, %al
     je success

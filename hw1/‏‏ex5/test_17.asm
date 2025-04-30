@@ -3,7 +3,7 @@ String: .asciz "multiply 0x44 divide"
 Result: .byte 0
 
 .section .text
-    call _start
+     
     movzbl Result(%rip), %eax
     cmpb $2, %al
     je success
